@@ -50,14 +50,14 @@ public class MyListImpl implements MyList {
 			}
 		}
 
-		int razmer = masSize;
+		int newSize = masSize;
 		if (da) {
 			masSize--;
 		}
 
 		Object[] newmas = new Object[masSize];
 		int y = 0;
-		for (int i = 0; i < razmer; i++) {
+		for (int i = 0; i < newSize; i++) {
 			newmas[y] = mas[i];
 			y++;
 			if (i == temp) {
